@@ -6,7 +6,8 @@ const app = Vue.createApp({
             image: './assets/images/socks_blue.jpg',
             alternative: 'Meias azuis com logomarca Vue',
             url: 'https://vuejs.org',
-            target: '_blank'
+            target: '_blank',
+            visible: false
         }
     }
 })
