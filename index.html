@@ -10,6 +10,7 @@
   </head>
   <body>
     <div id="app">
+      <div class="cart">Cart({{cart}})</div>
       <h1>{{ product }}</h1>
       <p>{{ descriptionProduct}}</p>
       <div v-if="visible">
@@ -17,7 +18,14 @@
         <img :src="image" v-bind:alt="alternative">
         </a>
       </div>
-     
+      <div v-for="tamanho in details" :key="variant.id" 
+      @mouseover="updateImage(variant.image)"
+      class="button"
+      :style="{ backgroundColor:variant.color }">
+      </div>
+      <!-- <button class="button" v-on:click="cart += 1">Add to Cart</button> -->
+      <button class="button" v-on:click="addToCart">Add to Cart</button>
+      <!-- SHORT HAND<button class="button" @:click="addToCart">Add to Cart</button> -->
     </div>
 
     <!-- Import Js -->
