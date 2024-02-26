@@ -1,0 +1,48 @@
+h1 {
+    font-size: medium;
+}
+
+h2 {
+    font-size: small;
+}
+
+.card:focus{
+    border: 2px solid;
+    border-color: cadetblue;
+}
+
+.card {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 18px;
+    /*12 dp padding = 12dp*/
+    border-color: grey;
+    background-color: #FEF7FF;
+    /*Light*/
+    text-align: start;
+    word-wrap: break-word;
+    text-wrap: wrap;
+}
+
+.card .card-display {
+    width: 100%;
+    height: auto;
+    border-color: grey;
+    border: 1px solid;
+    border-radius: 10px 10px 0 0;
+}
+
+.card header,
+.card main,
+.card footer {
+    width: inherit;
+    height: auto;
+    margin-bottom: 8px;
+    border-color: grey;
+    border: 1px solid;
+    padding-left: 12px;
+    padding-right: 12px;
+}
